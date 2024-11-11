@@ -1,29 +1,29 @@
-class Stack{
-    constructor(){
-        this.item=[]
+class Stack {
+    constructor() {
+        this.item = []
     }
 
-    isEmpty(){
-        return this.item.length===0
+    isEmpty() {
+        return this.item.length === 0
     }
-    isSize(){
+    isSize() {
         return this.item.length
     }
-    push(item){
+    push(item) {
         this.item.push(item)
     }
-    pop(){
+    pop() {
         this.item.pop()
     }
-    peak(){
-        console.log(this.item[this.item.length-1])
+    peak() {
+        console.log(this.item[this.item.length - 1])
     }
-    display(){
+    display() {
         console.log(this.item)
     }
 }
 
-let stack=new Stack()
+let stack = new Stack()
 stack.push(10)
 stack.push(70)
 stack.push(90)
